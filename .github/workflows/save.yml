@@ -18,4 +18,4 @@ jobs:
       - name: Install RPostgreSQL package
         run: Rscript -e 'install.packages("RPostgreSQL", dependencies = TRUE)'
       - name: Run The R Script
-        run: Rscript tugasWrite.R
+        run: Rscript save.R
