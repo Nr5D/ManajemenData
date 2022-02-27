@@ -50,10 +50,10 @@ samp_word <- sample(hashtag, 1)
 status_details <- paste0(
   Sys.Date(),": Data dalam database adalah ", nrow(data),
   " baris, dengan nilai total :", "\n","\n",
-  "⛺ ",dataPlot$Karakter[1], " : ", dataPlot$Angka[1], "\n",
-  "🏪 ",dataPlot$Karakter[2], " : ", dataPlot$Angka[2], "\n",
-  "🎪 ",dataPlot$Karakter[3], " : ", dataPlot$Angka[3], "\n",
-  "👨🏻‍🌾 ",dataPlot$Karakter[4], " : ", dataPlot$Angka[4], "\n",
+  "⚽ ",dataPlot$Karakter[1], " : ", dataPlot$Angka[1], "\n",
+  "🏀 ",dataPlot$Karakter[2], " : ", dataPlot$Angka[2], "\n",
+  "🏐 ",dataPlot$Karakter[3], " : ", dataPlot$Angka[3], "\n",
+  "🥎 ",dataPlot$Karakter[4], " : ", dataPlot$Angka[4], "\n",
   "\n",
   "\n",
   "#",samp_word)
