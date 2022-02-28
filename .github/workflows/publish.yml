@@ -1,8 +1,8 @@
-name: publish
+name: Publish
 
 on:
   schedule:
-    - cron: '20,50 * * * *'  # twice every hour.
+    - cron: '15,45 * * * *'  # twice every hour.
 
 jobs:
   publish-data:
