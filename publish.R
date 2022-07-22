@@ -64,18 +64,24 @@ status_details <- paste0(
 library(rtweet)
 
 ## Create Twitter token
-pangan_token <- rtweet::create_token(
-  app = "PanganBOT",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
+pangan_token <- rtweet::rtweet_bot(
+  api_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
+  api_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
   access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
+
+## Provide alt-text description
+alt_text <- paste0(
+  "Contoh Twitter Bot untuk Mata Kuliah Manajemen Data Statistika"
+)
+
 
 ## Post the image to Twitter
 rtweet::post_tweet(
   status = status_details,
   media = file,
+  media_alt_text = alt_text,
   token = pangan_token
 )
 
