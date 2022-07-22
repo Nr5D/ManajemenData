@@ -37,8 +37,8 @@ p <- ggplot(dataPlot, aes(x = Angka,
 
 # Download the image to a temporary location
 # save to a temp file
-file <- tempfile( fileext = ".png")
-ggsave(file, plot = p, device = "png", dpi = 144, width = 8, height = 8, units = "in" )
+file <- tempfile( fileext = ".jpeg")
+ggsave(file, plot = p, device = "jpeg", dpi = 144, width = 8, height = 8, units = "in" )
 
 ## 1st Hashtag
 hashtag <- c("ManajemenData","ManajemenDataStatistika", "github","rvest","rtweet", "ElephantSQL", "SQL", "bot", "opensource", "ggplot2","PostgreSQL","RPostgreSQL")
