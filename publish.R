@@ -24,8 +24,8 @@ dataPlot <- data %>% group_by(Karakter) %>%
 
 
 p <- ggplot(dataPlot, aes(x = Angka,
-           y = Karakter))+
-  geom_point() +
+           y = Karakter, color= Karakter))+
+  geom_point(size=10) +
   xlab("Jumlah") +
   ylab("")+
   scale_x_continuous(labels = function(x) formatC(x,
@@ -33,7 +33,7 @@ p <- ggplot(dataPlot, aes(x = Angka,
                                                   big.mark = ".",
                                                   decimal.mark = ",",
                                                   digits = 0))+
-  theme(text = element_text(size = 20))
+  theme(text = element_text(size = 40))
 
 # Download the image to a temporary location
 # save to a temp file
