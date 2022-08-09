@@ -33,7 +33,8 @@ p <- ggplot(dataPlot, aes(x = Angka,
                                                   big.mark = ".",
                                                   decimal.mark = ",",
                                                   digits = 0))+
-  theme(text = element_text(size = 40))
+  theme(text = element_text(size = 40),
+       legend.position="none")
 
 # Download the image to a temporary location
 # save to a temp file
