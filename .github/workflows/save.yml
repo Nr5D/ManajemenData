@@ -2,7 +2,7 @@ name: Save
 
 on:
   schedule:
-    - cron: '0,30 * * * *'  # once every 30 minutes
+    - cron: '45 * * * *'  # once every 30 minutes
 
 jobs:
   save-data:
