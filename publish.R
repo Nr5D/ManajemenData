@@ -77,6 +77,9 @@ alt_text <- paste0(
   "Contoh Twitter Bot untuk Mata Kuliah Manajemen Data Statistika"
 )
 
+# save the data
+dir.create(file.path('data') )
+write.csv(data, file.path("data/cobasimpan.csv"))
 
 ## Post the image to Twitter
 rtweet::post_tweet(
